@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Szkoła Nauki Jazdy</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Logo Szkoły">
+      </a>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="about.html">O nas</a></li>
+          <li><a href="services.html">Usługi</a></li>
+          <li><a href="team.html">Pracownicy</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Witamy w DrivePlus!</h1>
+      <p>Najlepsza szkoła jazdy w Twojej okolicy.</p>
+      <a href="about.html" class="cta-button">Dowiedz się więcej</a>
+    </section>
+
+    <section class="features">
+      <h2>Dlaczego warto wybrać nas?</h2>
+      <div class="feature-grid">
+        <div class="feature-tile">
+          <img src="images/modern_cars.webp" alt="Nowoczesne samochody">
+          <h3>Nowoczesne samochody</h3>
+          <p>Nasz park maszynowy składa się z najnowszych modeli, zapewniających bezpieczeństwo i komfort nauki.</p>
+        </div>
+        <div class="feature-tile">
+          <img src="images/experienced_instructors.webp" alt="Doświadczeni instruktorzy">
+          <h3>Doświadczeni instruktorzy</h3>
+          <p>Nasza kadra to wykwalifikowani specjaliści z wieloletnim doświadczeniem.</p>
+        </div>
+        <div class="feature-tile">
+          <img src="images/high_pass_rate.webp" alt="Wysoka zdawalność">
+          <h3>Wysoka zdawalność</h3>
+          <p>90% naszych kursantów zdaje egzamin za pierwszym razem.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="signup-bar">
+      <div class="signup-content">
+        <h2>Zapisz się na kurs!</h2>
+        <p>Nie czekaj – naucz się prowadzić z najlepszymi instruktorami.</p>
+        <button onclick="window.location.href='signup.html'">Zapisz się teraz</button>
+      </div>
+    </div>
+
+    <section class="testimonials">
+      <h2>Co mówią nasi kursanci?</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial">
+          <div class="stars">
+            ★★★★☆
+          </div>
+          <p>"Szkoła DrivePlus to świetne miejsce do nauki jazdy! Instruktorzy są bardzo cierpliwi i profesjonalni."</p>
+          <h4>- Kasia, 21 lat</h4>
+        </div>
+        <div class="testimonial">
+          <div class="stars">
+            ★★★★★
+          </div>
+          <p>"Nowoczesne samochody i super atmosfera! Polecam każdemu!"</p>
+          <h4>- Tomek, 27 lat</h4>
+        </div>
+        <div class="testimonial">
+          <div class="stars">
+            ★★★★☆
+          </div>
+          <p>"Bardzo polecam tę szkołę. Egzamin zdałam za pierwszym razem, dzięki świetnym wskazówkom!"</p>
+          <h4>- Agnieszka, 24 lata</h4>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section id="newsletter">
+        <h3>Zapisz się do newslettera</h3>
+        <form id="newsletterForm">
+          <input type="email" id="email" placeholder="Wpisz swój email" required>
+          <button type="submit">Zapisz się</button>
+        </form>
+        <p id="newsletterMessage"></p>
+      </section>
+
+      <div class="footer-social">
+        <h4>Śledź nas</h4>
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+      </div>
+
+      <p>&copy; 2024 Szkoła Nauki Jazdy. Wszelkie prawa zastrzeżone.</p>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

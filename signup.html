@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zapisz się na zajęcia - Szkoła Nauki Jazdy</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Logo Szkoły">
+      </a>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="about.html">O nas</a></li>
+          <li><a href="services.html">Usługi</a></li>
+          <li><a href="team.html">Pracownicy</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="signup-form">
+      <h1>Zapisz się na zajęcia</h1>
+      <p>Wypełnij poniższy formularz, aby zarezerwować miejsce na kursie.</p>
+
+      <form id="signupForm">
+        <div class="form-group">
+          <label for="name">Imię i nazwisko:</label>
+          <input type="text" id="name" name="name" placeholder="Wpisz swoje imię i nazwisko" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Wpisz swój email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Numer telefonu:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Wpisz swój numer telefonu" required>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Wybierz kurs:</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Wybierz z listy</option>
+            <option value="basic">Kurs Podstawowy</option>
+            <option value="express">Kurs Ekspresowy</option>
+            <option value="advanced">Doskonalenie Jazdy</option>
+            <option value="refresher">Jazdy Doszkalające</option>
+            <option value="eco">Szkolenie Eco Driving</option>
+            <option value="simulator">Symulator Jazdy</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Preferowana data rozpoczęcia:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Dodatkowe uwagi:</label>
+          <textarea id="comments" name="comments" placeholder="Wpisz swoje uwagi (opcjonalnie)" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Zapisz się</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <section id="newsletter">
+      <h3>Zapisz się do newslettera</h3>
+      <form id="newsletterForm">
+        <input type="email" id="email" placeholder="Wpisz swój email" required>
+        <button type="submit">Zapisz się</button>
+      </form>
+      <p id="newsletterMessage"></p>
+    </section>
+  
+    <div class="footer-social">
+      <h4>Śledź nas</h4>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    </div>
+  
+    <p>&copy; 2024 Szkoła Nauki Jazdy. Wszelkie prawa zastrzeżone.</p>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </footer>
+
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Dziękujemy za zapis! Skontaktujemy się z Tobą wkrótce.");
+    });
+  </script>
+</body>
+</html>

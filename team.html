@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pracownicy - Szkoła Nauki Jazdy</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Logo Szkoły">
+      </a>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Strona główna</a></li>
+          <li><a href="about.html">O nas</a></li>
+          <li><a href="services.html">Usługi</a></li>
+          <li><a href="team.html">Pracownicy</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="team">
+      <h1>Nasi instruktorzy</h1>
+      <p>Poznaj nasz zespół wykwalifikowanych instruktorów.</p>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="images/instructor1.webp" alt="Instruktor 1">
+          <h3>Jan Kowalski</h3>
+          <p>Specjalista od jazdy miejskiej i tras egzaminacyjnych.</p>
+        </div>
+        <div class="team-member">
+          <img src="images/instructor2.webp" alt="Instruktor 2">
+          <h3>Anna Nowak</h3>
+          <p>Ekspertka od jazdy defensywnej i parkowania.</p>
+        </div>
+        <div class="team-member">
+          <img src="images/instructor3.webp" alt="Instruktor 3">
+          <h3>Piotr Wiśniewski</h3>
+          <p>Instruktor o wieloletnim doświadczeniu w nauczaniu młodych kierowców.</p>
+        </div>
+        <div class="team-member">
+          <img src="images/instructor4.webp" alt="Instruktor 4">
+          <h3>Robert Wiśniewski</h3>
+          <p>Instruktor z doświadczeniem w szkoleniu kierowców na autostradach.</p>
+        </div>
+        <div class="team-member">
+          <img src="images/instructor5.webp" alt="Instruktor 5">
+          <h3>Maria Zielińska</h3>
+          <p>Ekspertka od jazdy w trudnych warunkach pogodowych.</p>
+        </div>
+        <div class="team-member">
+          <img src="images/instructor6.webp" alt="Instruktor 6">
+          <h3>Tomasz Lewandowski</h3>
+          <p>Pasjonat technik jazdy ekonomicznej i ekologicznej.</p>
+        </div>
+        
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <section id="newsletter">
+      <h3>Zapisz się do newslettera</h3>
+      <form id="newsletterForm">
+        <input type="email" id="email" placeholder="Wpisz swój email" required>
+        <button type="submit">Zapisz się</button>
+      </form>
+      <p id="newsletterMessage"></p>
+    </section>
+  
+    <div class="footer-social">
+      <h4>Śledź nas</h4>
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    </div>
+  
+    <p>&copy; 2024 Szkoła Nauki Jazdy. Wszelkie prawa zastrzeżone.</p>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
